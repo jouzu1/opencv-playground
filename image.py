@@ -4,9 +4,11 @@ import numpy as np
 # ==============================================================================
 # 0. INPUT IMAGE
 # ==============================================================================
-# img = cv2.imread('img.jpg')       # Untuk sample gambar otsu threshold
+# img0 = cv2.imread('img.jpg')       # Untuk sample gambar otsu threshold
 # img = cv2.imread('simple.jpg')    # Untuk sample gambar simple threshold
 img = cv2.imread('adaptive.jpg')    # Untuk sample gambar adaptive threshold
+
+img_yellow = cv2.imread('yellow.jpg')
 
 """
 ==============================================================================
@@ -153,7 +155,7 @@ for cnt in contours:
         )
 
 # ==============================================================================
-# 9. DISPLAY & SAVE RESULT
+# 10. DISPLAY & SAVE RESULT
 # ==============================================================================
 cv2.imshow('image', img_with_box) 
 cv2.waitKey(0)           # Press 0 to close window
